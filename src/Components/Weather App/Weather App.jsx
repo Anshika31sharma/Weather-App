@@ -11,12 +11,13 @@ import humidity_icon from "../Assets/humidity.png";
 
 const WeatherApp = () => {
     let api_key = "7a70812681190434a7ce0cf5a6729f23";
+   let api_key = "7a70812681190434a7ce0cf5a6729f23";
     const [wicon, setWicon] = useState(cloud_icon);
     const [weatherData, setWeatherData] = useState({});
-    const [humidity, setHumidity] = useState('');
-    const [windSpeed, setWindSpeed] = useState('');
-    const [temperature, setTemperature] = useState('');
-    const [location, setLocation] = useState('');
+    const [humidity, setHumidity] = useState('10');
+    const [windSpeed, setWindSpeed] = useState('10km');
+    const [temperature, setTemperature] = useState('40C');
+    const [location, setLocation] = useState('DELHI');
 
     const search = async () => {
         const element = document.querySelector(".cityInput");
